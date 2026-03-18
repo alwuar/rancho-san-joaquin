@@ -1,0 +1,49 @@
+{
+  "public/font/Anton-Regular.ttf": {
+    "file": "assets/Anton-Regular-DcVcLnRJ.ttf",
+    "src": "public/font/Anton-Regular.ttf"
+  },
+  "public/font/FiraSans-Bold.ttf": {
+    "file": "assets/FiraSans-Bold-N1IGzrdY.ttf",
+    "src": "public/font/FiraSans-Bold.ttf"
+  },
+  "resources/css/app.scss": {
+    "file": "assets/app-BImD07aM.css",
+    "src": "resources/css/app.scss",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/css/casas.scss": {
+    "file": "assets/casas-BCCiuIEz.css",
+    "src": "resources/css/casas.scss",
+    "isEntry": true,
+    "name": "casas",
+    "names": [
+      "casas.css"
+    ]
+  },
+  "resources/css/index.scss": {
+    "file": "assets/index-BSxmJi5Q.css",
+    "src": "resources/css/index.scss",
+    "isEntry": true,
+    "name": "index",
+    "names": [
+      "index.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BO1y5sXO.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/bg.js": {
+    "file": "assets/bg-CttoCaNT.js",
+    "name": "bg",
+    "src": "resources/js/bg.js",
+    "isEntry": true
+  }
+}
