@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/agen2024vandu/rsj.agenciavandu.com/
+    - /bin/cp -R * $DEPLOYPATH
