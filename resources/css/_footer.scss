@@ -1,0 +1,62 @@
+@use 'colores';
+.footer {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: colores.$yellow ;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+    hr {
+        border: solid 1px #000;
+        width: 100%;
+
+    }
+}
+
+.footernav {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .copyright {
+        min-height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 70px;
+
+        .enlaces {
+            display: flex;
+            flex-direction: row;
+
+            gap: 30px;
+            a {
+                text-decoration: none;
+             
+            }
+        }
+    }
+}

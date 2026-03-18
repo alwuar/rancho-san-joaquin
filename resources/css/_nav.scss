@@ -1,0 +1,9 @@
+@use 'colores';
+
+.bg-rancho {
+    background-color: transparent;
+    .nav-link {
+        color: colores.$bco;
+    }
+    
+}

@@ -1,0 +1,22 @@
+@use 'colores';
+
+.venta-cruzada {
+        .vcruzada {
+                .size {    
+                    height: 300px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }   
+                }
+                    a {
+                        text-decoration: none;
+                            h4 {
+                            text-align: center;
+                            margin-top: .5em;
+                            color: colores.$black;
+                        }
+                    }
+        }
+}

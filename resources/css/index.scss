@@ -1,0 +1,93 @@
+
+
+@use 'colores';
+@use 'grid';
+.txtdark {
+    color: #000;
+}
+.bgdark {
+    background: colores.$black;
+    transition: .5s ease;
+    color: #fff;
+}
+body {
+    transition: 1s;
+}
+.header {
+    height: 550px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: colores.$bco;
+    position: relative;
+    overflow: hidden;
+
+    .contenido {
+        position: absolute;
+    }
+    .overlay {
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Color negro con 30% de opacidad */
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -50;
+    }
+    video {
+        z-index: -100;
+    }
+}
+
+.nosotros {
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    .contenido {
+        width: 50%;
+    }@media(max-width: 600px) {
+        .contenido {
+            width: 100%;
+        }
+    }
+}
+
+.lote-fundador {
+    .informacion {
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+
+       align-items: center;
+
+       .cta {
+        width: 90%;
+       }
+       .botones {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+       }
+
+       li {
+        list-style: none;
+       }
+    }
+}
+
+.faq {
+    color: colores.$yellow;
+        .accordion-item {
+            background: none;
+            color: colores.$yellow;
+                .accordion-button {
+                background-color: transparent;
+                color: colores.$yellow;
+                
+            }
+    }
+}

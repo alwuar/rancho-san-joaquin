@@ -1,0 +1,26 @@
+$fuentes : (
+    "light" : 'anton',
+    "bold" :  'fira-bold'
+
+);
+@use 'nav';
+@use 'fuentes';
+@use 'footer';
+@use 'colores';
+// resources/css/app.scss
+@import 'bootstrap/scss/bootstrap';
+
+
+h1,h2,h3,h4,h5 {
+    font-family: map-get($fuentes ,  "light" );
+} 
+
+.btn-primary {
+    background-color: colores.$redrancho;
+    border: none;
+    font-weight: 700;
+
+    &:hover {
+        background-color: colores.$yellow;
+    }
+}
