@@ -47,8 +47,10 @@ body {
     display: flex;
     min-height: 300px;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     .contenido {
-        width: 50%;
+        width: 100%;
     }@media(max-width: 600px) {
         .contenido {
             width: 100%;
@@ -84,9 +86,10 @@ body {
         .accordion-item {
             background: none;
             color: colores.$yellow;
-                .accordion-button {
-                background-color: transparent;
-                color: colores.$yellow;
+            border: none;
+            .accordion-button {
+            background-color: transparent !important;
+            color: colores.$yellow;
                 
             }
     }

@@ -67,39 +67,48 @@
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <ul class="navbar-nav m-auto justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ganado en venta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos de obra civil</a>
+                        <a class="nav-link" href="/experiencia-rancho/casa-principal">Casa uno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Proyectos de obra privada</a>
+                        <a class="nav-link" href="/experiencia-rancho/villa-capilla">Villa Capilla</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contacto</a>
+                        <a class="nav-link" href="/experiencia-rancho/el-departamento-de-campo">El departamento de campo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/experiencia-rancho/casa-en-la-playa">Casa en la playa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/solicitudes">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="redes ">
             <div class="enlaces">
-                <a href="">
+                <a href="https://www.facebook.com/ranchosanjoaquinmx" target="blank_">
                     <img src="{{ asset('/img/iconos/facebook-brands-solid-full.svg') }}" width="30" alt="">
                 </a>
-                <a href="">
+                <a href="http://www.tiktok.com/@rancho_sanjoaquin" target="blank_">
                     <img src="{{ asset('/img/iconos/tiktok-brands-solid-full.svg') }}" width="30" alt="">
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/ranchosanjoaquinmx/" target="blank_">
                     <img src="{{ asset('/img/iconos/square-instagram-brands-solid-full.svg') }}" width="30"
                         alt="">
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/@RanchoSanJoaqu%C3%ADn" target="blank_">
                     <img src="{{ asset('/img/iconos/youtube-brands-solid-full.svg') }}" width="30" alt="">
                 </a>
-                <a href="">
+                <a href="https://es-l.airbnb.com/rooms/1403669619336700457?source_impression_id=p3_1774030314_P3TBbBssiToBDPkg" target="blank_">
                     <img src="{{ asset('/img/iconos/airbnb-brands-solid-full.svg') }}" width="30" alt="">
                 </a>
             </div>

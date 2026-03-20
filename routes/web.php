@@ -21,6 +21,9 @@ Route::get('/experiencia-rancho/el-departamento-de-campo', function () {
 Route::get('/experiencia-rancho/casa-en-la-playa', function () {
     return view('casaplaya');
 });
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
 // Bloqueamos el acceso directo por URL (GET)
 Route::get('/solicitudes', function () {
     return view('contacto'); 

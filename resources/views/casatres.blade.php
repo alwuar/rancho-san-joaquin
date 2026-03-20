@@ -89,7 +89,7 @@
             </div>
             <div class="cta text-center" style="height: 150px; display:flex; flex-direction: column; justify-content:center; align-items: center;">
                 <a class="btn btn-primary btn-lg" href="https://www.airbnb.mx/rooms/1403711728096970651?unique_share_id=0007da5e-46cf-47d4-8b85-787902ce82d6&viralityEntryPoint=1&s=76&source_impression_id=p3_1773858289_P3guXdWQq0iwtbFK" target="blank_">
-                    Más información
+                    <img src="{{ asset('/img/iconos/airbnb-brands-solid-full.svg') }}" width="30" alt=""> Reservar en Airbnb
                 </a>
             </div>
         </div>
