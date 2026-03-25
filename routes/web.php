@@ -24,6 +24,9 @@ Route::get('/experiencia-rancho/casa-en-la-playa', function () {
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
+Route::get('/ganado-en-venta', function () {
+    return view('ganado-en-venta');
+});
 // Bloqueamos el acceso directo por URL (GET)
 Route::get('/solicitudes', function () {
     return view('contacto'); 
@@ -31,6 +34,7 @@ Route::get('/solicitudes', function () {
 Route::post('/contacto', [ContactoController::class, 'procesar'])->name('contacto.enviar');
 
 Route::post('/send-mail',function(Request $request){
-    Mail::to('contacto@ddrproyectos.mx')->send(new Form($request->nombre,$request->empresa,$request->telefono));
-    return response()->download(public_path('documents/CV_DDR_SA_CV_ESPAÑOL.pdf'));
+    Mail::to('ab@agenciavandu.com')->send(new Form($request->nombre,$request->empresa,$request->telefono));
+    return response()->download(public_path('documents/public/documents/CATALOGO-DE-VENTA-RANCHO-SAN-JOAQUIN.pdf'));
 })->name('send.form');
+

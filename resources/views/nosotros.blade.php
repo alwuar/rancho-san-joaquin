@@ -6,7 +6,7 @@
         <div class="container">
             <div class="video">
                 <iframe width="80%" height="415"
-                    src="https://www.youtube.com/embed/kO3mpz75I8Q?autoplay=1&mute=1&playlist=kO3mpz75I8Q&loop=1&rel=0"
+                    src="https://www.youtube.com/embed/M_s3EWI_g38?autoplay=1&mute=1&si=e5EkeO405zg0HzlL"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <iframe width="100%" height="359"
-                    src="https://www.youtube.com/embed/kO3mpz75I8Q?autoplay=1&mute=1&playlist=kO3mpz75I8Q&loop=1&rel=0"
+                    src="https://www.youtube.com/embed/EIaa7pSBRYU?autoplay=1&mute=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -49,9 +49,9 @@
             <div class="quienes-somos__lista">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <img src="{{ asset('/img/forma.svg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/foto-aerea-rancho-san-joaquin.png') }}" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-6 col-sm-12 m-auto">
+                    <div class="col-md-6 col-sm-12 m-auto p-4">
                         <h5>Somos criadores de Brangus de registro, miembros activos de la Asociación Mexicana de
                             Criadores de Brangus. </h5>
                         <p>
@@ -88,19 +88,18 @@
             <div class="marca__misionvision">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <h4>Nuestra Misión</h4>
+                        <h4>Nuestra misión</h4>
                         <p>Desarrollar y comercializar pie de cría Brangus certificado, adaptado al trópico del sureste
                             mexicano, bajo un modelo de producción sustentable, tecnificado y medible que garantice
                             calidad genética real para nuestros clientes.
                         </p>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <h4>Nuestra Misión</h4>
+                        <h4>Nuestra visión</h4>
                         <p>Consolidarnos como uno de los referentes en producción de Brangus de alta calidad en el
                             sureste de México, alcanzando para 2028 una producción anual de 220 cabezas certificadas,
                             manteniendo estándares superiores de genética, adaptación y trazabilidad. <br><br>
-                            <b> No buscamos volumen.
-                                Buscamos liderazgo por calidad.</b>
+                           
 
                         </p>
                     </div>
@@ -139,7 +138,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <iframe width="100%" height="359"
-                    src="https://www.youtube.com/embed/kO3mpz75I8Q?autoplay=1&mute=1&playlist=kO3mpz75I8Q&loop=1&rel=0"
+                    src="https://www.youtube.com/embed/OH3bvQzs2J4?autoplay=1&mute=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>

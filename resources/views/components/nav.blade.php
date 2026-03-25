@@ -17,7 +17,7 @@
           <a class="nav-link" href="/nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#ganado">Ganado en venta</a>
+          <a class="nav-link" href="/ganado-en-venta">Ganado en venta</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

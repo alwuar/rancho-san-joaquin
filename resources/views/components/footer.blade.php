@@ -183,7 +183,7 @@
                         <button type="submit" class="btn btn-primary" id="btnEnviar">
                             <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"
                                 aria-hidden="true"></span>
-                            <span id="btnText">Enviar mensaje</span>
+                            <span id="btnText">Descargar catálogo</span>
                         </button>
                     </form>
 

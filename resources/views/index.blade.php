@@ -10,8 +10,8 @@
                 Hecelchakán, Campeche</h1>
             <p>Genética Brangus desarrollada y adaptada al clima cálido y húmedo del sureste.</p>
             <div class="botones gap-3">
-                <a href="" class="cta btn btn-warning"> Ver Sementales Disponibles</a>
-                <a href="" class="cta btn btn-outline-warning" style="color: #fff;">Agendar visita privada</a>
+                <button href="" class="cta btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Ver Sementales Disponibles</button>
+                <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning" style="color: #fff;">Agendar visita privada</a>
             </div>
         </div>
     </header>
@@ -58,8 +58,8 @@
                             de Criadores de Brangus.
                         </p>
                         <div class="botones">
-                            <a href="" class="cta btn btn-warning"> Descargar catálogo</a>
-                            <a href="" class="cta btn btn-outline-warning">Whatsapp directo</a>
+                            <button href="" class="cta btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Descargar catálogo</button>
+                            <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning">Whatsapp directo</a>
                         </div>
                     </div>
                 </div>
