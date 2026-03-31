@@ -5,12 +5,15 @@
     <header class="hero-nosotros">
         <div class="container">
             <div class="video">
-                <iframe width="80%" height="415"
-                    src="https://www.youtube.com/embed/M_s3EWI_g38?autoplay=1&mute=1&si=e5EkeO405zg0HzlL"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                <div class="ratio ratio-16x9 mx-auto" style="max-width: 700px; width: 80%;">
+    <iframe src="https://www.youtube.com/embed/M_s3EWI_g38?autoplay=1&mute=1&si=e5EkeO405zg0HzlL"
+            title="YouTube video player" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+</div>
 
             </div>
             <h1>Rancho San Joaquín</h1>
@@ -38,18 +41,19 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <iframe width="100%" height="359"
-                    src="https://www.youtube.com/embed/EIaa7pSBRYU?autoplay=1&mute=1"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                            src="https://www.youtube.com/embed/EIaa7pSBRYU?autoplay=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
             <div class="quienes-somos__lista">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <img src="{{ asset('/img/foto-aerea-rancho-san-joaquin.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/foto-aerea-rancho-san-joaquin.png') }}" class="img-fluid"
+                            alt="">
                     </div>
                     <div class="col-md-6 col-sm-12 m-auto p-4">
                         <h5>Somos criadores de Brangus de registro, miembros activos de la Asociación Mexicana de
@@ -99,7 +103,7 @@
                         <p>Consolidarnos como uno de los referentes en producción de Brangus de alta calidad en el
                             sureste de México, alcanzando para 2028 una producción anual de 220 cabezas certificadas,
                             manteniendo estándares superiores de genética, adaptación y trazabilidad. <br><br>
-                           
+
 
                         </p>
                     </div>
@@ -107,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="valores">
+    <section class="valores mt-5 mb-t">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 m-auto">
@@ -138,25 +142,27 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <iframe width="100%" height="359"
-                    src="https://www.youtube.com/embed/OH3bvQzs2J4?autoplay=1&mute=1"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                        src="https://www.youtube.com/embed/OH3bvQzs2J4?autoplay=1&mute=1" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section class="diferentes">
+    <section class="diferentes mt-5 mb-5">
         <div class="container text-center">
             <h3>Nuestro compromiso</h3>
-            <p>Nuestro compromiso es vender pie de cría Brangus certificado al mercado mexicano. <br class="d-none d-sm-none d-md-block">
-                Si un ejemplar no alcanza el estándar reproductivo, se destina a producción de carne de alta calidad, <br class="d-none d-sm-none d-md-block">
-                pero nunca se comercializa como reproductor. 
+            <p>Nuestro compromiso es vender pie de cría Brangus certificado al mercado mexicano. <br
+                    class="d-none d-sm-none d-md-block">
+                Si un ejemplar no alcanza el estándar reproductivo, se destina a producción de carne de alta calidad,
+                <br class="d-none d-sm-none d-md-block">
+                pero nunca se comercializa como reproductor.
                 La confianza se construye con hechos, no con palabras.
             </p>
             <p>Ubicados en: Hecelchakán, Campeche. <br>
-Producción para todo el sureste de México.</p>
+                Producción para todo el sureste de México.</p>
         </div>
     </section>
     @push('js')

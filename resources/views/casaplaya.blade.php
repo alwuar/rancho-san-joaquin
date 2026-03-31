@@ -73,7 +73,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-lg-6 col-sm-12"
+                            <div class="col-lg-6 col-sm-12 pt-3"
                                 style="display: flex; flex-direction: column; gap: 15px; list-style: none;">
                                 <li style="display: flex; flex-direction:row; gap: 10px;">
                                     <img src="{{ asset('/img/comida.svg') }}" width="30" alt="">Cenas bajo

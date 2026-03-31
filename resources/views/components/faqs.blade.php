@@ -14,7 +14,6 @@
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            Gemini ha dicho
                             El Brangus es una raza de ganado bovino creada específicamente para combinar lo mejor de dos
                             mundos: la resistencia extrema y la calidad de carne superior.
                             <br><br>

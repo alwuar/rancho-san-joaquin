@@ -35,6 +35,6 @@ Route::post('/contacto', [ContactoController::class, 'procesar'])->name('contact
 
 Route::post('/send-mail',function(Request $request){
     Mail::to('ab@agenciavandu.com')->send(new Form($request->nombre,$request->empresa,$request->telefono));
-    return response()->download(public_path('documents/public/documents/CATALOGO-DE-VENTA-RANCHO-SAN-JOAQUIN.pdf'));
+    return response()->download(public_path('documents/public/documents/catalogo-ganado-en-venta.pdf'));
 })->name('send.form');
 

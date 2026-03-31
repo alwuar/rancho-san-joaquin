@@ -1,4 +1,4 @@
-<section class="footer" id="footer">
+<section class="footer mt-5" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 contenido m-auto">
@@ -13,7 +13,7 @@
                 </div>
                 <div class="elemento">
                     <h5>Teléfono</h5>
-                    <p><a href="tel:9992183102">+52 (999) 218-3102</a></p>
+                    <p><a href="tel:9999909048">+52 (999) 990 9048</a></p>
                 </div>
 
             </div>
@@ -63,36 +63,38 @@
 <section class="footernav">
     <div class="container">
         <hr>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <ul class="navbar-nav m-auto justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ganado en venta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/experiencia-rancho/casa-principal">Casa uno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/experiencia-rancho/villa-capilla">Villa Capilla</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/experiencia-rancho/el-departamento-de-campo">El departamento de campo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/experiencia-rancho/casa-en-la-playa">Casa en la playa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/solicitudes">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+       <div class="row">
+    <div class="col-12">
+        <ul class="navbar-nav m-auto justify-content-center d-flex flex-row flex-wrap text-center">
+            
+            <li class="nav-item active col-6 col-lg-auto">
+                <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="#">Ganado en venta</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/experiencia-rancho/casa-principal">Casa uno</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/experiencia-rancho/villa-capilla">Villa Capilla</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/experiencia-rancho/el-departamento-de-campo">El departamento de campo</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/experiencia-rancho/casa-en-la-playa">Casa en la playa</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="/solicitudes">Contacto</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
         <div class="redes ">
             <div class="enlaces">
                 <a href="https://www.facebook.com/ranchosanjoaquinmx" target="blank_">
