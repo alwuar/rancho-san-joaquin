@@ -10,8 +10,8 @@
                 Hecelchakán, Campeche</h1>
             <p>Genética Brangus desarrollada y adaptada al clima cálido y húmedo del sureste.</p>
             <div class="botones gap-3">
-                <button href="" class="cta btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Ver Sementales Disponibles</button>
-                <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning" style="color: #fff;">Agendar visita privada</a>
+                <button href="" class="cta btn btn-warning mt-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Ver Sementales Disponibles</button>
+                <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning mt-2" style="color: #fff;">Agendar visita privada</a>
             </div>
         </div>
     </header>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="foto2" style="background-image: url({{asset('/img/vaca2_1.png')}}); justify-content:center; align-items: center; background-size:cover;  text-align-center; display:flex; flex-direction:column; ">
-                    <div class="foto2__contenido">
+                    <div class="foto2__contenido text-center">
                         <h2>Angus</h2>
                         <p>Aporta calidad de carne, precocidad y genética productiva</p>
                     </div>
