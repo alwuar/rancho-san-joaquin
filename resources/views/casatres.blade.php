@@ -98,7 +98,7 @@
         <x-slot name="vcruzada1">
             <a href="/experiencia-rancho/casa-en-la-playa">
                 <div class="size">
-                    <img src="{{ asset('/img/playa/3.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('/img/playa/6.jpeg') }}" class="img-fluid" alt="">
                 </div>
                 <h4>Casa en la playa</h4>
             </a>
