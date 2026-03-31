@@ -4,7 +4,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 contenido m-auto">
                 <div class="elemento">
                     <h5>Dirección</h5>
-                    <p><a href="https://maps.app.goo.gl/Cc2HYr14wFx2TsoN8">Hecelchakán, Campeche</a></p>
+                    <p><a href="https://maps.app.goo.gl/oCXLYv8h3wh4u82T7">Hecelchakán, Campeche</a></p>
                 </div>
                 <div class="elemento">
                     <h5>Email</h5>
@@ -86,7 +86,7 @@
                         <a class="nav-link" href="/nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto">
-                        <a class="nav-link" href="#">Ganado en venta</a>
+                        <a class="nav-link" href="/ganado-en-venta">Ganado en venta</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto">
                         <a class="nav-link" href="/experiencia-rancho/casa-principal">Casa uno</a>

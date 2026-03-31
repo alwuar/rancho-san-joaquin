@@ -197,17 +197,26 @@
             display: block;
             image-rendering: smooth;
             border-radius: 1em;
-              .foto3__contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                
+              
+                .foto3__contenido {
                 height: 200px;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
                 p {
-                    width: 50%;
+                    width: 70%;
                     text-align: center;
                     color: colores.$black;
                     font-weight: 700;
+                    
                 }
               }
 
@@ -215,8 +224,9 @@
             .foto3 {
                 grid-column: 1/10;
                 grid-row: 4/4;
-                height: 200px;
+                height: 300px;
             }
+            
         }
         
     }@media (max-width:450px) {

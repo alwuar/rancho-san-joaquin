@@ -98,7 +98,7 @@
                 </div>
                 <div class="foto3">
                     <div class="foto3__contenido">
-                        <p>Esta combinación logra un equilibrio perfecto entre calidad y adaptación, lo que la convierte en una de las mejores opciones para la ganadería en climas cálidos como el sureste de México.</p>
+                        <p >Esta combinación logra un equilibrio perfecto entre calidad y adaptación, lo que la convierte en una de las mejores opciones para la ganadería en climas cálidos como el sureste de México.</p>
                     </div>
                 </div>
 

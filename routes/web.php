@@ -49,7 +49,7 @@ Route::post('/contacto', function(Request $request) {
 
     // 2. Verificamos el captcha con Google
     $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-        'secret' => env('6Lc89Z8sAAAAALXnUzHVLii8OKZy41Tj68OnxKRj'), 
+        'secret' => '6Lc89Z8sAAAAALXnUzHVLii8OKZy41Tj68OnxKRj', 
         'response' => $request->input('g-recaptcha-response'),
     ]);
 
@@ -87,7 +87,7 @@ Route::post('/enviar-contacto-directo', function(Request $request) {
 
     // 2. Verificamos el captcha con Google
     $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-        'secret' => env('6Lc89Z8sAAAAALXnUzHVLii8OKZy41Tj68OnxKRj'), 
+        'secret' => '6Lc89Z8sAAAAALXnUzHVLii8OKZy41Tj68OnxKRj', 
         'response' => $request->input('g-recaptcha-response'),
     ]);
 
