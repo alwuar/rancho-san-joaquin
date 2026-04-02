@@ -57,7 +57,10 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-button class="ml-4" wire:loading.attr="disabled" wire:target="save">
+            <x-button class="ml-4 {{ !$catalogPdf ? 'bg-gray-400 opacity-50 cursor-not-allowed hover:bg-gray-400' : '' }}" 
+                wire:loading.attr="disabled" 
+                wire:target="save, catalogPdf"
+                :disabled="!$catalogPdf">
                 <span wire:loading.remove wire:target="save">Subir Nuevo Catálogo</span>
                 <span wire:loading wire:target="save">Subiendo...</span>
             </x-button>
