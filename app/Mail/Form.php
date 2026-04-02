@@ -16,10 +16,13 @@ class Form extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(public $nombre, public $empresa, public $telefono)
-    {
-
-    }
+    // Actualizamos las variables que recibe el constructor
+    public function __construct(
+        public $nombre, 
+        public $email, 
+        public $telefono, 
+        public $mensaje
+    ) {}
 
     /**
      * Get the message envelope.
@@ -27,7 +30,7 @@ class Form extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nueva descarga de curriculum',
+            subject: 'Nueva descarga de catálogo - Rancho',
         );
     }
 
@@ -40,16 +43,15 @@ class Form extends Mailable
             markdown: 'mail.form',
             with: [
                 'nombre' => $this->nombre,
-                'empresa' => $this->empresa,
+                'email' => $this->email,
                 'telefono' => $this->telefono,
+                'mensaje' => $this->mensaje,
             ],
         );
     }
 
     /**
      * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
      */
     public function attachments(): array
     {

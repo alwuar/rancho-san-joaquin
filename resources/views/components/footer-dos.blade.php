@@ -94,74 +94,74 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="contactoFormModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    @if (session('success'))
-                        <div class="alert alert-success text-white bg-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="contactoFormModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (session('success'))
+                    <div class="alert alert-success text-white bg-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
 
-                    @if (session('error'))
-                        <div class="alert alert-danger text-white bg-danger">
-                            {{ session('error') }}
-                        </div>
-                    @endif
+                @if (session('error'))
+                    <div class="alert alert-danger text-white bg-danger">
+                        {{ session('error') }}
+                    </div>
+                @endif
 
-                    <form id="contactoForm" action="{{ route('contacto.enviar') }}" method="POST">
-                        @csrf
-                       <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
+                <form id="contactoForm" action="{{ route('contacto.enviar') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
 
-                        <div class="mb-3">
-                            <label class="form-label">Nombre</label>
-                            <input type="text" name="nombre"
-                                class="form-control @error('nombre') is-invalid @enderror" placeholder="Tu nombre"
-                                value="{{ old('nombre') }}" required>
-                            @error('nombre')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" name="nombre"
+                            class="form-control @error('nombre') is-invalid @enderror" placeholder="Tu nombre"
+                            value="{{ old('nombre') }}" required>
+                        @error('nombre')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email"
-                                class="form-control @error('email') is-invalid @enderror"
-                                placeholder="nombre@empresa.com" value="{{ old('email') }}" required>
-                            @error('email')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email"
+                            class="form-control @error('email') is-invalid @enderror"
+                            placeholder="nombre@empresa.com" value="{{ old('email') }}" required>
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Teléfono</label>
-                            <input type="tel" name="telefono" class="form-control" placeholder="Número de teléfono"
-                                value="{{ old('telefono') }}">
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="tel" name="telefono" class="form-control" placeholder="Número de teléfono"
+                            value="{{ old('telefono') }}">
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Mensaje</label>
-                            <textarea name="mensaje" class="form-control @error('mensaje') is-invalid @enderror" rows="3" required>{{ old('mensaje') }}</textarea>
-                            @error('mensaje')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea name="mensaje" class="form-control @error('mensaje') is-invalid @enderror" rows="3" required>{{ old('mensaje') }}</textarea>
+                        @error('mensaje')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                        <button type="submit" class="btn btn-primary" id="btnEnviar">
-                            <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"
-                                aria-hidden="true"></span>
-                            <span id="btnText">Enviar mensaje</span>
-                        </button>
-                    </form>
+                    <button type="submit" class="btn btn-primary" id="btnEnviar">
+                        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"
+                            aria-hidden="true"></span>
+                        <span id="btnText">Enviar y descargar catálogo</span>
+                    </button>
+                </form>
 
-                </div>
             </div>
         </div>
     </div>
+</div>
 </section>
 {{-- <script>
     // Esperamos a que todo el HTML esté listo
@@ -225,4 +225,71 @@
             });
         }
     });
+
+
+    document.getElementById('contactoForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evitamos que la página se recargue
+
+    // Mostramos el spinner y cambiamos el texto del botón
+    const btnSpinner = document.getElementById('btnSpinner');
+    const btnText = document.getElementById('btnText');
+    const btnEnviar = document.getElementById('btnEnviar');
+    
+    btnSpinner.classList.remove('d-none');
+    btnText.innerText = "Procesando...";
+    btnEnviar.disabled = true;
+
+    // Recogemos los datos del formulario
+    const formData = new FormData(this);
+
+    // Enviamos los datos a Laravel vía AJAX
+    fetch(this.getAttribute('action'), {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            // 1. Creamos un enlace invisible para forzar la descarga
+            const link = document.createElement('a');
+            link.href = data.downloadUrl;
+            link.download = 'catalogo-ganado-en-venta.pdf'; // Nombre con el que se guardará
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+
+            // 2. Avisamos al usuario que se envió con éxito
+            btnText.innerText = "¡Enviado y Descargando!";
+            btnSpinner.classList.add('d-none');
+            
+            // Opcional: Cerramos el modal después de 2 segundos
+            setTimeout(() => {
+                const modalElement = document.getElementById('exampleModal');
+                const modal = bootstrap.Modal.getInstance(modalElement);
+                if (modal) modal.hide();
+                
+                // Restauramos el botón por si quieren abrirlo de nuevo
+                btnEnviar.disabled = false;
+                btnText.innerText = "Enviar y descargar catálogo";
+                document.getElementById('contactoForm').reset();
+            }, 2500);
+            
+        } else {
+            alert('Hubo un error al procesar tu solicitud. Inténtalo de nuevo.');
+            btnEnviar.disabled = false;
+            btnSpinner.classList.add('d-none');
+            btnText.innerText = "Enviar mensaje";
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Ocurrió un problema en el servidor.');
+        btnEnviar.disabled = false;
+        btnSpinner.classList.add('d-none');
+        btnText.innerText = "Enviar mensaje";
+    });
+});
 </script>

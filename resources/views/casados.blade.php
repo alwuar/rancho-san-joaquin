@@ -71,7 +71,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-lg-6 col-sm-12"
+                            <div class="col-lg-6 col-sm-12 pt-3"
                                 style="display: flex; flex-direction: column; gap: 15px; list-style: none;">
                                 <li style="display: flex; flex-direction:row; gap: 10px;">
                                     <img src="{{ asset('/img/comida.svg') }}" width="30" alt="">Cenas bajo
@@ -91,7 +91,7 @@
             </div>
              <div class="cta text-center" style="height: 150px; display:flex; flex-direction: column; justify-content:center; align-items: center;">
                 <a class="btn btn-primary btn-lg" href="https://www.airbnb.mx/rooms/1403699373112072197?unique_share_id=dab26ce1-f47f-448c-bf69-d0c8cd8c81b9&viralityEntryPoint=1&s=76&source_impression_id=p3_1773858304_P33xwjJdRFWu3HoH" target="blank_">
-                    Más información
+                    <img src="{{ asset('/img/iconos/airbnb-brands-solid-full.svg') }}" width="30" alt=""> Reservar en Airbnb
                 </a>
             </div>
         </div>
@@ -109,7 +109,7 @@
         <x-slot name="vcruzada2">
             <a href="/experiencia-rancho/casa-en-la-playa">
                 <div class="size">
-                    <img src="{{ asset('/img/playa/3.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('/img/playa/6.jpeg') }}" class="img-fluid" alt="">
                 </div>
                 <h4>Casa en la playa</h4>
             </a>
