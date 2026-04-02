@@ -111,3 +111,12 @@ Route::post('/enviar-contacto-directo', function(Request $request) {
     return redirect()->back()->with('success', '¡Tu mensaje ha sido enviado con éxito! Nos pondremos en contacto contigo pronto.');
     
 })->name('contacto.directo.enviar');
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
