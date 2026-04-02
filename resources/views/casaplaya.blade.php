@@ -73,7 +73,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-lg-6 col-sm-12"
+                            <div class="col-lg-6 col-sm-12 pt-3"
                                 style="display: flex; flex-direction: column; gap: 15px; list-style: none;">
                                 <li style="display: flex; flex-direction:row; gap: 10px;">
                                     <img src="{{ asset('/img/comida.svg') }}" width="30" alt="">Cenas bajo
@@ -93,7 +93,7 @@
             </div>
             <div class="cta text-center" style="height: 150px; display:flex; flex-direction: column; justify-content:center; align-items: center;">
                 <a class="btn btn-primary btn-lg" href="https://www.airbnb.mx/rooms/18104728?unique_share_id=c5739155-ff75-4405-ac25-b8fe699c7c9b&viralityEntryPoint=1&s=76&source_impression_id=p3_1773858387_P3nGSJTN3YEbsiBv" target="blank_">
-                    Más información
+                   <img src="{{ asset('/img/iconos/airbnb-brands-solid-full.svg') }}" width="30" alt=""> Reservar en Airbnb
                 </a>
             </div>
         </div>

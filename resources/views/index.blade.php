@@ -10,8 +10,8 @@
                 Hecelchakán, Campeche</h1>
             <p>Genética Brangus desarrollada y adaptada al clima cálido y húmedo del sureste.</p>
             <div class="botones gap-3">
-                <a href="" class="cta btn btn-warning"> Ver Sementales Disponibles</a>
-                <a href="" class="cta btn btn-outline-warning" style="color: #fff;">Agendar visita privada</a>
+                <button href="" class="cta btn btn-warning mt-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Ver Sementales Disponibles</button>
+                <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning mt-2" style="color: #fff;">Agendar visita privada</a>
             </div>
         </div>
     </header>
@@ -58,8 +58,8 @@
                             de Criadores de Brangus.
                         </p>
                         <div class="botones">
-                            <a href="" class="cta btn btn-warning"> Descargar catálogo</a>
-                            <a href="" class="cta btn btn-outline-warning">Whatsapp directo</a>
+                            <button href="" class="cta btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Descargar catálogo</button>
+                            <a href="https://wa.me/529999909048" target="blank" class="cta btn btn-outline-warning">Whatsapp directo</a>
                         </div>
                     </div>
                 </div>
@@ -80,18 +80,25 @@
         <div class="container">
             <div class="contenido text-center">
                 <h2 class="text-center">Brangus Adaptado al Clima del Sureste de México</h2>
-                <small>El Brangus es una raza sintética compuesta por:</small>
+                <small>La mejor combinación de resistencia, productividad y genética confiable para el trópico mexicano.</small>
             </div>
             <div class="grid-brangus">
-                <div class="foto1">
-                    <img loading="lazy" src="{{ asset('/img/vaca1.png') }}" alt="">
+                <div class="foto1" style="background-image: url({{asset('/img/vaca1_1.png')}}); justify-content:center; align-items: center; background-size:cover;  text-align-center; display:flex; flex-direction:column; ">
+                    <div class="foto1__contenido">
+                        <h2>Brahman</h2>
+                        <p>Aporta resistencia al calor, rusticidad y adaptación al trópico</p>
+                    </div>
                 </div>
-                <div class="foto2">
-                    <img loading="lazy" src="{{ asset('/img/vaca2.png') }}" alt="">
+                <div class="foto2" style="background-image: url({{asset('/img/vaca2_1.png')}}); justify-content:center; align-items: center; background-size:cover;  text-align-center; display:flex; flex-direction:column; ">
+                    <div class="foto2__contenido text-center">
+                        <h2>Angus</h2>
+                        <p>Aporta calidad de carne, precocidad y genética productiva</p>
+                    </div>
+                   
                 </div>
                 <div class="foto3">
                     <div class="foto3__contenido">
-                        <p>Del Angus hereda calidad de carne, fertilidad y precocidad. Del Brahman hereda adaptación al calor, resistencia a humedad y rusticidad.</p>
+                        <p >Esta combinación logra un equilibrio perfecto entre calidad y adaptación, lo que la convierte en una de las mejores opciones para la ganadería en climas cálidos como el sureste de México.</p>
                     </div>
                 </div>
 
@@ -106,117 +113,6 @@
         </div>
         </div>
     </section>
-    <section class="faq" id="faq">
-        <div class="container">
-            <h3 class="text-center pb-5">Preguntas frecuentes</h3>
-            <div class="contenido">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    {{-- Preguntas frecuentes --}}
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                ¿Qué es el Brangus?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                                body.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                ¿Cuál es su origen y composición genética?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                                body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                ¿Qué significa que el brangus sea una raza sintética?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                                body. Nothing more exciting happening here in terms of content, but just filling up the
-                                space to make it look, at least at first glance, a bit more representative of how this
-                                would
-                                look in a real-world application.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingfour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapsefour" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Información de Brangus en Mérida y la península de yucatán
-                            </button>
-                        </h2>
-                        <div id="flush-collapsefour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                                body. Nothing more exciting happening here in terms of content, but just filling up the
-                                space to make it look, at least at first glance, a bit more representative of how this
-                                would
-                                look in a real-world application.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingfive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapsefive" aria-expanded="false"
-                                aria-controls="flush-collapsefive">
-                                ¿Son criadores Brangus de Registro?
-                            </button>
-                        </h2>
-                        <div id="flush-collapsefive" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                                body. Nothing more exciting happening here in terms of content, but just filling up the
-                                space to make it look, at least at first glance, a bit more representative of how this
-                                would
-                                look in a real-world application.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingsix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapsesix" aria-expanded="false"
-                                aria-controls="flush-collapsesix">
-                                ¿Cuáles son los beneficios productivos reales?
-                            </button>
-                        </h2>
-                        <div id="flush-collapsesix" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                                body. Nothing more exciting happening here in terms of content, but just filling up the
-                                space to make it look, at least at first glance, a bit more representative of how this
-                                would
-                                look in a real-world application.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-faqs></x-faqs>
     
 </x-layouts.guest>
