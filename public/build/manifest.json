@@ -20,6 +20,24 @@
       "app.css"
     ]
   },
+  "resources/css/casas.scss": {
+    "file": "assets/casas-Bnh1ouU1.css",
+    "src": "resources/css/casas.scss",
+    "isEntry": true,
+    "name": "casas",
+    "names": [
+      "casas.css"
+    ]
+  },
+  "resources/css/experiencia.scss": {
+    "file": "assets/experiencia-tn0RQdqM.css",
+    "src": "resources/css/experiencia.scss",
+    "isEntry": true,
+    "name": "experiencia",
+    "names": [
+      "experiencia.css"
+    ]
+  },
   "resources/css/index.scss": {
     "file": "assets/index-FcUMEvpB.css",
     "src": "resources/css/index.scss",
@@ -27,6 +45,15 @@
     "name": "index",
     "names": [
       "index.css"
+    ]
+  },
+  "resources/css/nosotros.scss": {
+    "file": "assets/nosotros-DCkx-VIY.css",
+    "src": "resources/css/nosotros.scss",
+    "isEntry": true,
+    "name": "nosotros",
+    "names": [
+      "nosotros.css"
     ]
   },
   "resources/js/app.js": {

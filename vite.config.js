@@ -9,7 +9,10 @@ export default defineConfig({
                 'resources/css/app.scss',
                 'resources/css/index.scss',
                 'resources/js/app.js',
-                'resources/js/bg.js'
+                'resources/js/bg.js',
+                'resources/css/casas.scss',
+                'resources/css/nosotros.scss',
+                'resources/css/experiencia.scss'
             ],
             refresh: true,
         }),
