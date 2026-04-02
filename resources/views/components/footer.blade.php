@@ -161,7 +161,7 @@
                         </div>
                     @endif
 
-                    <form id="contactoForm" action="{{ route('contacto.enviar') }}" method="POST" target="_blank">
+                    <form id="contactoForm" action="{{ route('contacto.enviar') }}" method="POST">
                         @csrf
                         <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
 
@@ -236,7 +236,7 @@
 });
 </script>
 
-{{-- <script>
+<script>
     // Esperamos a que todo el HTML esté listo
     document.addEventListener('DOMContentLoaded', function() {
         const formulario = document.getElementById('contactoForm');
@@ -252,17 +252,28 @@
 
                 btn.disabled = true;
                 if (spinner) spinner.classList.remove('d-none');
-                if (text) text.innerText = "Enviando...";
+                if (text) text.innerText = "Preparando descarga...";
 
                 grecaptcha.ready(function() {
-                    grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
-                        action: 'contacto'
+                    // Ejecutamos reCAPTCHA con la misma clave que el formulario de contacto directo
+                    grecaptcha.execute('6Lc89Z8sAAAAALt1LkKAd74ZVJBD6W0kNIKGckd5', {
+                        action: 'submit'
                     }).then(function(token) {
-                        document.getElementById('g-recaptcha-response').value = token;
+                        // Asignamos el token correctamente mediante selector de clase
+                        document.querySelector('#contactoForm .g-recaptcha-response').value = token;
+                        
+                        // Enviamos el formulario
                         formulario.submit();
+
+                        // Opcional: restauramos el botón luego de un lapso para que el usuario pueda volver a usarlo sin recargar
+                        setTimeout(function() {
+                            btn.disabled = false;
+                            if (spinner) spinner.classList.add('d-none');
+                            if (text) text.innerText = "Descargar catálogo";
+                        }, 3000);
                     });
                 });
             });
         }
     });
-</script> --}}
+</script>
