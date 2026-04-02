@@ -22,6 +22,6 @@
     <x-slot:footer>
         <x-mail::footer>
             © {{ date('Y') }} Rancho San Joaquín. @lang('Todos los derechos reservados.')
-        </x-mail::footer
+        </x-mail::footer>
     </x-slot:footer>
 </x-mail::layout>

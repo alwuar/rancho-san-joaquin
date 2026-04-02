@@ -61,7 +61,7 @@ Route::post('/contacto', function(Request $request) {
     }
 
     // 3. Enviamos el correo
-    Mail::to('ab@agenciavandu.com')->send(new Form(
+    Mail::to(['ab@agenciavandu.com', 'ranchosanjoaquinmx@gmail.com'])->send(new Form(
         $request->nombre, 
         $request->email, 
         $request->telefono, 
@@ -100,7 +100,7 @@ Route::post('/enviar-contacto-directo', function(Request $request) {
     }
 
     // 3. Enviamos el correo (reutilizamos tu Mailable Form)
-    Mail::to('contacto@ranchosanjoaquin.com.mx')->send(new Form(
+    Mail::to(['contacto@ranchosanjoaquin.com.mx', 'ranchosanjoaquinmx@gmail.com'])->send(new Form(
         $request->nombre, 
         $request->email, 
         $request->telefono, 
